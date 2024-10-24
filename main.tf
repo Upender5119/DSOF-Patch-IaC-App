@@ -4,8 +4,6 @@ provider "aws" {
   skip_credentials_validation = true
   skip_requesting_account_id  = true
   skip_metadata_api_check     = true
-  access_key                  = var.access_key
-  secret_key                  = var.secret_key
 }
 
 resource "aws_iam_account_password_policy" "strict" {
